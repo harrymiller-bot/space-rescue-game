@@ -10,8 +10,5 @@ class Start_button(RoomObject):
         self.handle_mouse_events = True
 
     def clicked(self, button_number):
-        if button_number == 1:  # left mouse button
-            print("Left")
-        elif button_number == 3:  # right mouse button
-            print("Right")
-        
+        if button_number == 1:
+            self.room.running = False        
