@@ -16,7 +16,7 @@ class Globals:
     window_name = 'Dont take the bait!'
 
     # - Set the order of the rooms - #
-    levels = ["WelcomeScreen", "GamePlay"]
+    levels = ["WelcomeScreen", "GamePlay", "Mail"]
 
     # - Set the starting level - #
     start_level = 0
@@ -38,3 +38,12 @@ class Globals:
 
     total_count = 0
     destroyed_count = 0
+
+    mail_messages = [
+        "bad1",
+        "good1",
+        "bad2",
+        "good2",
+        "good3",
+        "bad3"
+    ]

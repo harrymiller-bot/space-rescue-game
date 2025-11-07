@@ -2,6 +2,7 @@ from GameFrame import Level
 from Objects.bar import Bar
 from Objects.mail import mail
 from Objects.Shop import shop
+
 class GamePlay(Level):
     def __init__(self, screen, joysticks):
         Level.__init__(self, screen, joysticks)
