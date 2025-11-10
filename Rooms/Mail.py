@@ -7,6 +7,9 @@ class Mail(Level):
 
         self.set_background_image("mail_back.jpg")
 
+        # Create text object centered in screen
         self.text = text(self, 
-                           Globals.SCREEN_WIDTH/2 - 20, 20, "")
+                        Globals.SCREEN_WIDTH/2 - 200,  # Centered X position
+                        Globals.SCREEN_HEIGHT/2 - 50,  # Centered Y position
+                        "")
         self.add_room_object(self.text)

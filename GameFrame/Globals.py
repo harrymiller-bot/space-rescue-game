@@ -1,4 +1,3 @@
-
 class Globals:
 
     running = True
@@ -39,9 +38,16 @@ class Globals:
     total_count = 0
     destroyed_count = 0
 
-    mail_messages = [
-        "bad1",
-        "good1"
-        "bad2",
-        "good2"
+    mail_messages_good = [
+        "Great job keeping your data secure!",
+        "You successfully spotted a phishing attempt!",
+        "Your password strength is excellent!",
+        "Thank you for enabling 2-factor authentication!"
+    ]
+
+    mail_messages_bad = [
+        "Click here to claim your free prize!", 
+        "Your account needs immediate verification",
+        "Urgent: Your bank account is locked",
+        "You've won a lottery you never entered!"
     ]
