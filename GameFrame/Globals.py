@@ -41,9 +41,7 @@ class Globals:
 
     mail_messages = [
         "bad1",
-        "good1",
+        "good1"
         "bad2",
-        "good2",
-        "good3",
-        "bad3"
+        "good2"
     ]

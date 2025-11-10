@@ -5,9 +5,9 @@ class text(TextObject):
     def __init__(self, room, x: int, y: int, text=None):       
         TextObject.__init__(self, room, x, y, text)
         
-        self.size = 40
+        self.size = 30
         self.font = 'Arial Black'
-        self.colour = (255,255,255)
+        self.colour = (0,0,0)
         self.bold = False
         self.text = self.get_message()
         self.update_text()
