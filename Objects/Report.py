@@ -1,4 +1,6 @@
 from GameFrame import RoomObject, Globals
+from Objects.text import scam
+
 
 class Report(RoomObject): 
     def __init__(self, room, x, y):
@@ -12,3 +14,8 @@ class Report(RoomObject):
         Response = True
         self.room.running = False
         Globals.next_level = 1
+
+        if scam == True and Response == True or scam == False and Response == False: 
+            Globals.money += 50
+
+

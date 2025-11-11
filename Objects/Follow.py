@@ -1,4 +1,5 @@
 from GameFrame import RoomObject, Globals
+from Objects.text import scam
 
 class Follow(RoomObject): 
     def __init__(self, room, x, y):
@@ -12,3 +13,6 @@ class Follow(RoomObject):
         Response = False
         self.room.running = False
         Globals.next_level = 1
+
+        if scam == True and Response == False or scam == False and Response == True: 
+            Globals.money -= 50

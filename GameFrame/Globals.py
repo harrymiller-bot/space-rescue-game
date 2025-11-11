@@ -37,6 +37,8 @@ class Globals:
 # ###### User Defined Global Variables below this line ######## #
 # ############################################################# #
 
+    response = None
+
     total_count = 0
     destroyed_count = 0
 

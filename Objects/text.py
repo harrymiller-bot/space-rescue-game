@@ -1,7 +1,7 @@
 from GameFrame import TextObject, Globals
 import random
 
-scam = False
+scam = None
 
 class text(TextObject):
     def __init__(self, room, x: int, y: int, text=None):       
