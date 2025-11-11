@@ -11,11 +11,13 @@ class Globals:
     # - Set the starting number of lives - #
     LIVES = 3
 
+    money = 0
+
     # - Set the Window display name - #
     window_name = 'Dont take the bait!'
 
     # - Set the order of the rooms - #
-    levels = ["WelcomeScreen", "GamePlay", "Mail", "Gameplay"]
+    levels = ["WelcomeScreen", "GamePlay", "Mail"]
 
     # - Set the starting level - #
     start_level = 0
