@@ -11,6 +11,8 @@ class Globals:
     # - Set the starting number of lives - #
     LIVES = 3
 
+    
+
     money = 0
 
     # - Set the Window display name - #
@@ -38,6 +40,8 @@ class Globals:
 # ############################################################# #
 
     response = None
+
+    Email_decision = None
 
     total_count = 0
     destroyed_count = 0

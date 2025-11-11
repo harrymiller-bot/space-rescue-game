@@ -1,29 +1,24 @@
 from GameFrame import TextObject, Globals
 import random
 
-scam = None
-
 class text(TextObject):
-    def __init__(self, room, x: int, y: int, text=None):       
+    def __init__(self, room, x: int, y: int, text=None):
         TextObject.__init__(self, room, x, y, text)
-        
+
         self.size = 30
         self.font = 'Arial Black'
-        self.colour = (0,0,0)
         self.bold = False
-        
+        self.colour = (0, 0, 0)
+
         if random.random() < 0.5:
-            self.text = self.get_message_good()
-            scam = False
+            msg = self.get_message_good()
+            self.is_scam = False
         else:
-            self.text = self.get_message_bad()
-            scam = True
-            
-        if self.text is None:
-            self.text = "No messages available"
-            
+            msg = self.get_message_bad()
+            self.is_scam = True
+
+        self.text = msg if msg is not None else "No messages available"
         self.update_text()
-        print(scam)
 
     def get_message_good(self):
         if len(Globals.mail_messages_good) > 0:

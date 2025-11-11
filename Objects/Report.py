@@ -1,5 +1,5 @@
 from GameFrame import RoomObject, Globals
-from Objects.text import scam
+
 
 
 class Report(RoomObject): 
@@ -11,11 +11,19 @@ class Report(RoomObject):
         self.handle_mouse_events = True
 
     def clicked(self, button_number):
-        Response = True
+        if button_number != 1:
+            return
+
+        Globals.response = False
+
+        mail_obj = getattr(self.room, 'text', None)
+        is_scam = getattr(mail_obj, 'is_scam', False)
+
+        if is_scam:
+            Globals.money += 50
+        else:
+            Globals.money -= 50
+
         self.room.running = False
         Globals.next_level = 1
-
-        if scam == True and Response == True or scam == False and Response == False: 
-            Globals.money += 50
-
 
