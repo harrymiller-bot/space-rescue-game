@@ -15,7 +15,7 @@ class Globals:
     window_name = 'Dont take the bait!'
 
     # - Set the order of the rooms - #
-    levels = ["WelcomeScreen", "GamePlay", "Mail"]
+    levels = ["WelcomeScreen", "GamePlay", "Mail", "Gameplay"]
 
     # - Set the starting level - #
     start_level = 0
