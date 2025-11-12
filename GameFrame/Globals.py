@@ -60,4 +60,18 @@ class Globals:
         "You've won a lottery you never entered! B"
     ]
 
+    mail_messages_bad_R = [
+        "Click here to claim your free prize! B", 
+        "Your account needs immediate verification B",
+        "Urgent: Your bank account is locked B",
+        "You've won a lottery you never entered! B"
+    ]
+
+    mail_messages_good_R = [
+        "Great job keeping your data secure! G",
+        "You successfully spotted a phishing attempt! G",
+        "Your password strength is excellent!",
+        "Thank you for enabling 2-factor authentication! G"
+    ]
+
     threshold = 99
