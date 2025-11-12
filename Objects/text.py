@@ -5,7 +5,7 @@ class text(TextObject):
     def __init__(self, room, x: int, y: int, text=None):
         TextObject.__init__(self, room, x, y, text)
 
-        self.size = 30
+        self.size = 26
         self.font = 'Arial Black'
         self.bold = False
         self.colour = (0, 0, 0)

@@ -10,4 +10,4 @@ class WelcomeScreen(Level):
 
         self.set_background_image("Title.png")
 
-        self.add_room_object(Start_button(self, 442, 181))
+        self.add_room_object(Start_button(self, 442, 735))

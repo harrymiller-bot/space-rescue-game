@@ -5,7 +5,7 @@ class Start_button(RoomObject):
         RoomObject.__init__(self, room, x, y)
 
         image = self.load_image("start.png")
-        self.set_image(image,317,437)
+        self.set_image(image,300,50)
 
         self.handle_mouse_events = True
 

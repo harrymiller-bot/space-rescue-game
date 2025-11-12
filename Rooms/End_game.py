@@ -5,6 +5,6 @@ class End_game(Level):
         Level.__init__(self, screen, joysticks)
         self.set_background_image("end_back.jpg")
 
-        self.add_room_object(play_again(self, 331, 150))
+        self.add_room_object(play_again(self, 440, 460))
 
 

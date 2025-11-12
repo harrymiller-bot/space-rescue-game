@@ -16,8 +16,8 @@ class Mail(Level):
         # Create text object centered in screen
         self.text = text(
             self,
-            Globals.SCREEN_WIDTH // 2 - 200,
-            Globals.SCREEN_HEIGHT // 2 - 50,
+            Globals.SCREEN_WIDTH // 2 - 400,
+            Globals.SCREEN_HEIGHT // 2 - 150,
             ""
         )
         self.add_room_object(self.text)

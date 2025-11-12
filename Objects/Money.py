@@ -18,6 +18,13 @@ class Money(TextObject):
             self.prev_money = Globals.money
             self.text = f"Money: ${Globals.money}"
             self.update_text()
+        if Globals.money <= 0:
+            self.colour = (255, 0, 0)
+            self.update_text()
+        else:
+            self.colour = (0, 255, 0)
+            self.update_text()
+
         
         if Globals.money >= Globals.threshold:
             self.running = False
