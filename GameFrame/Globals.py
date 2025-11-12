@@ -19,7 +19,7 @@ class Globals:
     window_name = 'Dont take the bait!'
 
     # - Set the order of the rooms - #
-    levels = ["WelcomeScreen", "GamePlay", "Mail"]
+    levels = ["WelcomeScreen", "GamePlay", "Mail", "End_game"]
 
     # - Set the starting level - #
     start_level = 0
@@ -47,15 +47,17 @@ class Globals:
     destroyed_count = 0
 
     mail_messages_good = [
-        "Great job keeping your data secure!",
-        "You successfully spotted a phishing attempt!",
+        "Great job keeping your data secure! G",
+        "You successfully spotted a phishing attempt! G",
         "Your password strength is excellent!",
-        "Thank you for enabling 2-factor authentication!"
+        "Thank you for enabling 2-factor authentication! G"
     ]
 
     mail_messages_bad = [
-        "Click here to claim your free prize!", 
-        "Your account needs immediate verification",
-        "Urgent: Your bank account is locked",
-        "You've won a lottery you never entered!"
+        "Click here to claim your free prize! B", 
+        "Your account needs immediate verification B",
+        "Urgent: Your bank account is locked B",
+        "You've won a lottery you never entered! B"
     ]
+
+    threshold = 99

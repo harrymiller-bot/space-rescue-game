@@ -18,4 +18,8 @@ class Money(TextObject):
             self.prev_money = Globals.money
             self.text = f"Money: ${Globals.money}"
             self.update_text()
+        
+        if Globals.money >= Globals.threshold:
+            self.running = False
+            Globals.next_level = 3
         super().update()
