@@ -447,4 +447,4 @@ class Globals:
     "Delivery confirmation — Order #7012 delivered today",
     "Mentor welcome — First steps and suggested reading for your program"
 ]
-    threshold = 49
+    threshold = 999
