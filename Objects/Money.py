@@ -29,4 +29,8 @@ class Money(TextObject):
         if Globals.money >= Globals.threshold:
             self.running = False
             Globals.next_level = 3
+
+        if Globals.money <= -200:
+            self.running = False
+            Globals.next_level = 4
         super().update()
